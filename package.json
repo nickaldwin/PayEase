@@ -1,0 +1,12 @@
+{
+  "name": "fintec_app",
+  "version": "1.0.0",
+  "description": "the app is called fintech",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
