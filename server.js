@@ -10,13 +10,12 @@ const MongoStore = require("connect-mongo")(session);
 //const todoRoutes = require('')
 
 /*connect passport config*/
-require("dotenv").config({path: '../src/config/.env'})//config
+require("dotenv").config({path: "./config/.env"})//config
 
 //DB connect
 connectDB()
 
-//
-
+//engine for views
 app.set("view engine", "")// i dont have engine for the views yet
 app.use(express.static("public"))
 app.use(express.urlencoded({extended: true}))
