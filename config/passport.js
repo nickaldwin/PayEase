@@ -1,9 +1,7 @@
 const LocalStrategy = require("passport-local");
 const mongoose = require("mongoose");
-/*
-Add user models  later
-const User = require("")//  <=== ./models/User.js include the directory here
-*/
+
+const User = require("../models/User")
 
 module.exports = function (passport) {
   passport.use(

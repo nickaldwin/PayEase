@@ -10,7 +10,7 @@ const MongoStore = require("connect-mongo")(session);
 //const todoRoutes = require('')
 
 /*connect passport config*/
-require("dotenv").config({path: "./config/.env"})//config
+require("dotenv").config({path:"../config/.env"});
 
 //DB connect
 connectDB()
