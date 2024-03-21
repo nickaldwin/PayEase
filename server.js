@@ -13,14 +13,17 @@ const MongoStore = require("connect-mongo")(session);
 require("dotenv").config({path:"../config/.env"});
 
 //DB connect
-connectDB()
+connectDB();
 
 //engine for views
-app.set("view engine", "")// i dont have engine for the views yet
-app.use(express.static("public"))
-app.use(express.urlencoded({extended: true}))
-app.use(express.json)
-
+app.set("view engine", "jsx");//
+app.engine("jsx", require("express-react-views").createEngine());
+app.use(express.static("public"));
+app.use(express.urlencoded({extended: true}));
+app.use(express.json);
+app.use(methodOverride("_method"));
+app.use(logger(dev));
+app.use(flash());
 /*sessions*/
 app.use(
     session({
@@ -29,11 +32,11 @@ app.use(
       saveUninitialized: false,
       store: new MongoStore({ mongooseConnection: mongoose.connection }),
     })
-  )
+  );
 //passport & middleware
-app.use(passport.initialize())
-app.use(passport.session())
-
+app.use(passport.initialize());
+app.use(passport.session());
+app.use(flash());
 
 /*ROUTING*/
 /*
@@ -46,7 +49,7 @@ app.use('/', Routes)
 //app listening 
 app.listen(process.env.PORT, () => {
   console.log("the server is running")
-})
+});
 
 
 
