@@ -7,7 +7,7 @@ const MongoStore = require("connect-mongo")(session);
 /* add routes later */
 //const authRoutes = require('')
 //const homeRoutes = require('')
-//const todoRoutes = require('')
+//const Routes = require('')
 
 /*connect passport config*/
 require("dotenv").config({path:"../config/.env"});
