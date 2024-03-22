@@ -19,4 +19,4 @@ PayEase is a convenient and secure online payment application designed to simpli
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](Licence).
