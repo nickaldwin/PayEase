@@ -16,7 +16,3 @@ PayEase is a convenient and secure online payment application designed to simpli
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
 - **Payment Gateway Integration**: Stripe API
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
