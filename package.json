@@ -1,7 +1,7 @@
 {
-  "name": "fintec_app",
+  "name": "PayEase",
   "version": "1.0.0",
-  "description": "the app is called fintech",
+  "description": "the app is called PayEase",
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
