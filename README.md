@@ -36,8 +36,7 @@ Take a look at these couple examples that I have in my own portfolio:
 
 **Cucina:** https://github.com/nickaldwin/cucina
 
-**IntelliQueue:** https:/github.com/nickaldwin/IntelliQueue
-
+**InteliQue:** https://github.com/nickaldwin/IntelliQueue
 
 
 
