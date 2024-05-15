@@ -1,2 +1,0 @@
-# payease
-bank app
